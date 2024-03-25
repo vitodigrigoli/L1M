@@ -14,6 +14,18 @@
 </head>
 <body>
 
+	<div class="figures">
+		<div class="figures__triangle"></div>
+		<div class="figures__rectangle"></div>
+		<div class="figures__circle"></div>
+	</div>
+
+	<!-- Floating -->
+	<div class="floating icon__dark_mode">
+		<i class="fa-solid fa-moon"></i>
+	</div>
+
+	<!-- Navbar -->
 	<nav class="navbar container">
 
 		<div class="navbar__logo">
@@ -24,10 +36,11 @@
 		<div class="wrapper">
 			
 			<div class="navbar__icons">
-				<div class="navbar__icons__item">
+				<div class="navbar__icons__item navbar__icons__search" id="search">
+					<input type="text" placeholder="Search...">
 					<i class="fa-solid fa-magnifying-glass"></i>
 				</div>
-				<div class="navbar__icons__item">
+				<div class="navbar__icons__item icon__dark_mode" id="dark_mode">
 					<i class="fa-solid fa-moon"></i>
 				</div>
 			</div>
@@ -39,8 +52,9 @@
 		</div>
 	</nav>
 
+	<!-- Menu -->
 	<nav class="menu">
-		<div class="container">
+		<div class="menu__list container">
 			<ul>
 				<li><a href="" class=""><i class="fa-solid fa-palette"></i>Arte</a></li>
 				<li><a href="" class=""><i class="fa-solid fa-dna"></i>Biologia</a></li>
@@ -58,12 +72,17 @@
 				<li><a href="" class=""><i class="fa-solid fa-code"></i>Programmazione</a></li>
 			</ul>
 		</div>
+
+		<div class="menu__credits container">
+			<p>Design by <a href="">GeForGe 🔥</a></p>
+		</div>
+
 	</nav>
 	
 	<!-- Grid -->
 	<section class="grid grid--5 container">
 
-		<a class="grid__article"  href="">
+		<a class="grid__article watch watch--fade"  href="">
 			<div class="grid__article__media">
 				<img src="./assets/cover/vr-.jpg" alt="">
 			</div>
@@ -74,7 +93,7 @@
 			</div>
 		</a>
 
-		<a class="grid__article"  href="">
+		<a class="grid__article watch watch--fade"  href="">
 			<div class="grid__article__media">
 				<img src="./assets/cover/dna.jpg" alt="">
 			</div>
@@ -85,7 +104,7 @@
 			</div>
 		</a>
 
-		<a class="grid__article"  href="">
+		<a class="grid__article watch watch--fade"  href="">
 			<div class="grid__article__media">
 				<img src="./assets/cover/food.jpg" alt="">
 			</div>
@@ -96,7 +115,7 @@
 			</div>
 		</a>
 
-		<a class="grid__article"  href="">
+		<a class="grid__article watch watch--fade"  href="">
 			<div class="grid__article__media">
 				<img src="./assets/cover/vr.jpg" alt="">
 			</div>
@@ -107,7 +126,7 @@
 			</div>
 		</a>
 
-		<a class="grid__article"  href="">
+		<a class="grid__article watch watch--fade"  href="">
 			<div class="grid__article__media">
 				<img src="./assets/cover/e3.jpg" alt="">
 			</div>
@@ -118,7 +137,7 @@
 			</div>
 		</a>
 
-		<a class="grid__article"  href="">
+		<a class="grid__article watch watch--fade"  href="">
 			<div class="grid__article__media">
 				<img src="./assets/cover/bitcoin.jpg" alt="">
 			</div>
@@ -134,12 +153,12 @@
 	<!-- Stories -->
 	<section class="stories container">
 
-		<div class="stories__text">
-			<h2 class="title">Web <span class="color-3">Stories</span></h2>
+		<div class="stories__text watch watch--reveal">
+			<h2 class="title watch__item">Web <span class="color-3">Stories</span></h2>
 		</div>
 
 		<!-- Slider main container -->
-		<div class="stories__content swiper">
+		<div class="stories__content swiper watch watch--fade">
 			<!-- Additional required wrapper -->
 			<div class="swiper-wrapper">
 				<!-- Slides -->
@@ -189,7 +208,7 @@
 
 			<div class="popular__content">
 
-				<a href="" class="popular__content__article">
+				<a href="" class="popular__content__article watch watch--fade">
 					<div class="popular__content__article__media">
 						<img src="./assets/cover/retrogaming-2.jpg" alt="">
 					</div>
@@ -199,7 +218,7 @@
 					</div>
 				</a>
 
-				<a href="" class="popular__content__article">
+				<a href="" class="popular__content__article watch watch--fade">
 					<div class="popular__content__article__media">
 						<img src="./assets/cover/food.jpg" alt="">
 					</div>
@@ -209,7 +228,7 @@
 					</div>
 				</a>
 
-				<a href="" class="popular__content__article">
+				<a href="" class="popular__content__article watch watch--fade">
 					<div class="popular__content__article__media">
 						<img src="./assets/cover/dna.jpg" alt="">
 					</div>
@@ -221,8 +240,10 @@
 
 			</div>
 
-			<div class="popular__text">
-				<h2 class="title">Most <span class="color-1">Popular</span></h2>
+			<div class="popular__text ">
+				<div class="watch watch--reveal">
+					<h2 class="title watch__item">Most <span class="color-1">Popular</span></h2>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -231,12 +252,13 @@
 	<!-- Articles -->
 	<section class="articles">
 		<div class="container">
-
-			<h2 class="title">Infinite <span class="color-2">Articles</span></h2>
+			<div class="watch watch--reveal">
+				<h2 class="title watch__item">Infinite <span class="color-2">Articles</span></h2>
+			</div>
 
 			<div class="articles__inner">
 
-				<article class="article">
+				<article class="article watch watch--fade">
 					<a href="" class="article__media">
 						<img src="./assets/cover/bitcoin.jpg" alt="">
 					</a>
@@ -249,7 +271,7 @@
 					</div>
 				</article>
 	
-				<article class="article">
+				<article class="article watch watch--fade">
 					<a href="" class="article__media">
 						<img src="./assets/cover/e3.jpg" alt="">
 					</a>
@@ -262,7 +284,7 @@
 					</div>
 				</article>
 	
-				<article class="article">
+				<article class="article watch watch--fade">
 					<a href="" class="article__media">
 						<img src="./assets/cover/bitcoin.jpg" alt="">
 					</a>
